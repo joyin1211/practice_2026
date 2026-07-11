@@ -24,7 +24,7 @@ int main() {
         }
     }
     for (int i = 0; i < n; i++) {
-        dp[1][i] = 0;
+        dp[1 << i][i] = 0;
         for (int j = 0; j < n; j++) {
             cin >> gr[i][j];
         }
